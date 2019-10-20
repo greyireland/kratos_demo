@@ -1,8 +1,0 @@
-[2019/10/20 18:17:52.006] [INFO] [/usr/local/go/src/runtime/proc.go:200] github.com/greyireland/kratos-demo start
-[2019/10/20 18:17:52.007] [INFO] [/Users/xiaodong/go/src/github.com/greyireland/kratos-demo/internal/server/http/server.go:37] blademaster: start http listen addr: 0.0.0.0:8000
-[2019/10/20 18:17:59.787] [INFO] [/Users/xiaodong/go/src/github.com/bilibili/kratos/pkg/net/http/blademaster/server.go:72] ret=0 ts=0.003239614 ip=127.0.0.1 params=peer_uid=2&uid=1 traceid= path=/v1/message/list msg=0 err= user=no_user stack=<nil> timeout_quota=0.999936509 method=GET 
-[2019/10/20 18:18:42.893] [INFO] [/Users/xiaodong/go/src/github.com/bilibili/kratos/pkg/net/http/blademaster/server.go:72] user=no_user ret=0 err= timeout_quota=0.999970874 ts=0.000616063 traceid= ip=127.0.0.1 params=peer_uid=2&uid=1 msg=0 method=GET path=/v1/message/list stack=<nil> 
-[2019/10/20 18:18:43.858] [INFO] [/Users/xiaodong/go/src/github.com/bilibili/kratos/pkg/net/http/blademaster/server.go:72] timeout_quota=0.999852187 params=peer_uid=2&uid=1 ret=0 path=/v1/message/list stack=<nil> user=no_user ts=0.000850689 msg=0 err= traceid= method=GET ip=127.0.0.1 
-[2019/10/20 18:44:55.682] [INFO] [/usr/local/go/src/runtime/proc.go:200] get a signal interrupt
-[2019/10/20 18:44:55.683] [INFO] [/usr/local/go/src/runtime/proc.go:200] github.com/greyireland/kratos-demo exit
-[2019/10/20 18:44:55.683] [INFO] [/usr/local/go/src/runtime/asm_amd64.s:1337] blademaster: server closed
