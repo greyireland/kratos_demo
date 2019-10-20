@@ -20,7 +20,7 @@ func main() {
 	if err := paladin.Init(); err != nil {
 		panic(err)
 	}
-	log.Init(nil) // debug flag: log.dir={path}
+	log.Init(&log.Config{Dir: "logs"}) // debug flag: log.dir={path}
 	defer log.Close()
 	log.Info("github.com/greyireland/kratos-demo start")
 	svc := service.New()

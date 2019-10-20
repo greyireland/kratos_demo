@@ -6,8 +6,6 @@ import (
 	"github.com/greyireland/kratos-demo/internal/model"
 	"github.com/greyireland/kratos-demo/internal/service"
 
-	"fmt"
-
 	"github.com/bilibili/kratos/pkg/conf/paladin"
 	"github.com/bilibili/kratos/pkg/ecode"
 	"github.com/bilibili/kratos/pkg/log"
@@ -68,7 +66,6 @@ func howToStart(c *bm.Context) {
 func addMessage(c *bm.Context) {
 	var msg model.MessageInfo
 	err := binding.JSON.Bind(c.Request, &msg)
-	fmt.Println(msg, err)
 	if err != nil {
 		log.Error("param error %s", err)
 		c.JSON(nil, ecode.Int(499))
@@ -81,7 +78,6 @@ func addMessage(c *bm.Context) {
 func getMessages(c *bm.Context) {
 	var msg model.MessageInfo
 	err := binding.Form.Bind(c.Request, &msg)
-	fmt.Println(msg, err)
 	if err != nil {
 		log.Error("param error %s", err)
 		c.JSON(nil, ecode.Int(499))
